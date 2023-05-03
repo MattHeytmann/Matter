@@ -1,0 +1,27 @@
+{% extends "index.html" %} 
+
+{% block title %}Matter - But a step remains.{% endblock title %} 
+
+{% block content %}
+<body>
+  <main>
+    <div class="logo">matter<span class="dot">.</span></div>
+    <div class="text">
+      <h2 data-aos="fade-up" id="mainHeader">
+        Break the <br />
+        loop<span class="dot">.</span>
+      </h2>
+      <p data-aos="fade-up" data-aos-delay="300" class="secondaryText">
+        Sign up for Matter and reclaim your <br />
+        mental health & digital wellbeing <br />
+        for ever.
+      </p>
+      <a class="mainButton" href="{% url 'signup' %}">Join the waitlist</a>
+    </div>
+  </main>
+  <script>
+    AOS.init();
+    </script>
+  </body>
+{% endblock content %}
+  
